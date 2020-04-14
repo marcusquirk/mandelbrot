@@ -22,9 +22,10 @@ public class Mandelbrot {
         this.vMax = vMax;
     } // Mandelbrot()
 
-    public int check(int x, int y, int xMin, int xMax, int yMin, int yMax) {
+    public int check(int x, int y, int xMin, int xMax, int yMin, int yMax,
+            double c1, double c2) {
         c = this.mapping(x, y, xMin, xMax, yMin, yMax);
-        Complex z = new Complex(0, 0);
+        Complex z = new Complex(0+c1, 0+c2);
         int loopCounter = 0;
         Boolean continueLooping = true;
         while (continueLooping) {
