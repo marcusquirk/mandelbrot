@@ -72,10 +72,10 @@ class SimpleBitmap extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (c1<-1){c1Up = true;}
-        else if (c1>1){c1Up = false;}
-        if (c2<-1){c2Up = true;}
-        else if (c2>1){c2Up = false;}
+        if (c1<-1.3){c1Up = true;}
+        else if (c1>1.3){c1Up = false;}
+        if (c2<-1.3){c2Up = true;}
+        else if (c2>1.3){c2Up = false;}
         
         if (c1Up){c1 = c1+0.01;}
         else {c1 = c1-0.01;}
